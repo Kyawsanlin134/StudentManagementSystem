@@ -23,7 +23,7 @@ public class ExcelHelper {
 	
 
 	  public static String TYPE = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-	  static String[] HEADERs = { "Id", "Name", "Gender", "NRC", "DateofBirth", "Email", "City", "Address", "Hobby", "Remark" };
+	  static String[] HEADERs = { "Id", "Name", "Gender", "NRC", "DateofBirth", "City", "Address", "Remark" };
 	  static String SHEET = "students";
 
 	  public static boolean hasExcelFormat(MultipartFile file) {

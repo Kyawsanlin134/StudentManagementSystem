@@ -201,12 +201,9 @@ public String updateStudent(@PathVariable Long id, @ModelAttribute("student") St
     }
     @PostMapping("/students/import")
     public String uploadFile(@RequestParam("file") MultipartFile file) {
-
         if (ExcelHelper.hasExcelFormat(file)) {
             try {
                 studentService.save(file);
-
-
                 return "redirect:/students";
             } catch (Exception e) {
                 return "Could not upload the file: " + file.getOriginalFilename() + "!";

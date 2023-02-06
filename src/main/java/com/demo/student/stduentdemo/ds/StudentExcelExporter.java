@@ -66,7 +66,7 @@ public class StudentExcelExporter {
 		cell.setCellStyle(style);
 
 		cell = row.createCell(7);
-		cell.setCellValue("Rmark");
+		cell.setCellValue("Remark");
 		cell.setCellStyle(style);
 
 	}

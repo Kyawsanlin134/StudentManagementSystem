@@ -26,7 +26,6 @@ public class Student {
     private String name;
     private String nrc;
     private String gender;
-    //    @DateTimeFormat(pattern = "mm/dd/yyyy")
     private String db;
     private String city;
     private String address;
